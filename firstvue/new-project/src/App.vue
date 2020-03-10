@@ -1,24 +1,18 @@
 <template>
 <div>
   <p>{{title}}</p>
- 
-  <app-header></app-header>
-  <list></list>
-  <first></first>
+  <Login></Login>
 </div>
 
   
 </template>
 
 <script>
-import header from './components/header.vue'
-import first from './first.vue'
-import list from './components/list.vue'
+  import Login from './component/Login.vue'
 export default {
+
  components:{
-   'app-header':header,
-   'first':first,
-   'list':list
+     'Login' :Login
  },
   data() {
     return {
